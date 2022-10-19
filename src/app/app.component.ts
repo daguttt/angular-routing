@@ -14,4 +14,12 @@ export class AppComponent {
   queryParams() {
     this.router.navigate(['countries'], { queryParams: { name: 'colombia' } });
   }
+
+  logIn() {
+    sessionStorage.setItem('authenticated', 'true');
+  }
+
+  logOut() {
+    sessionStorage.setItem('authenticated', 'false');
+  }
 }
