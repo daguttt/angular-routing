@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './guards/auth.guard';
+import { IsLoggedInGuard } from './guards/is-logged-in.guard';
 import { CountryComponent } from './pages/country/country.component';
 
 const routes: Routes = [
   {
     path: 'countries',
-    canActivate: [AuthGuard],
+    canActivate: [IsLoggedInGuard],
     component: CountryComponent,
   },
 ];
