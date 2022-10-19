@@ -18,12 +18,12 @@ export class HeadersInterceptor implements HttpInterceptor {
     // });
     // const newReq = req.clone({ headers: newHeaders });
 
-    // * Correct way
+    // * Angular way
     // const newReq = req.clone({
     //   headers: req.headers.set('Student-Name', 'Daniel Gutiérrez'),
     // });
 
-    // * Optimal way
+    // * Angular Optimal way
     const newReq = req.clone({
       setHeaders: { 'Student-Name': 'Daneil Gutiérrez' },
     });
