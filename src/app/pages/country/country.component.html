@@ -1,1 +1,4 @@
-<p>country works!</p>
+<h1>Countries</h1>
+<ul *ngIf="countries$ | async as countries">
+  <li *ngFor="let country of countries">{{ country.name.common }}</li>
+</ul>
