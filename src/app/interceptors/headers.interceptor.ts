@@ -25,7 +25,7 @@ export class HeadersInterceptor implements HttpInterceptor {
 
     // * Angular Optimal way
     const newReq = req.clone({
-      setHeaders: { 'Student-Name': 'Daneil Gutiérrez' },
+      setHeaders: { 'Student-Name': 'Daniel Gutiérrez' },
     });
     return next.handle(newReq);
   }
